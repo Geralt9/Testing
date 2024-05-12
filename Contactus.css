@@ -1,0 +1,105 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box; font-family:  'Poppins' , sans-serif ;
+
+}
+
+body{
+    background-color: rgb(41, 43, 32);  height: 125vh;
+}
+
+.header {
+    
+    position: static; width: 100%; height: 12vh;
+   
+     border-color: rgb(20, 128, 252); z-index: 100;
+    border-width: 1.5px; color: white; background-color:rgb(47, 167, 247) ;
+    display: flex; justify-content: flex-end; align-items: center; gap: 10px ;
+    
+}
+.title1{
+    
+    position: absolute;  left: 25px; font-weight: 100; text-decoration: none ;
+    color: antiquewhite; border: none; font-size: 30px; font-style: sans-serif ;
+}
+.navbar{
+
+    display: flex;
+    gap: 45px ; margin-right: 45px; 
+}
+.navbar a {
+
+     padding: 15px;  font-weight: 500; font-size: larger;
+    transition: transform 0.2s ; color: white; border-radius: 5px;
+}
+.tab:hover{
+
+    transform: translateY(-5px);
+    color: blue; background-color: rgb(113, 224, 252); 
+}
+
+
+.messagetitle{
+    color: aliceblue; transform: translateX(-25%); left: 23.5%; position: absolute;
+    transform: translateY(-25%); top: 20%; font-size: large;
+}
+
+.formcontainer{
+
+    display: flex; justify-content: center; 
+    flex-direction: row;      align-items: center; 
+     background-color:rgb(25, 163, 255);
+    border: solid; margin-top: 15vh; transform: translateX(-50%); left: 50%;
+    position: relative;  border-width: 1.5px;
+    height: 85vh; width: 100vh;  
+
+
+}
+
+.form{
+
+    border: solid; border-width: .5px; display: flex;  flex-direction: column; background-color: black; color: white;
+    height:75vh ; width: 90vh ; border-radius: 5px;
+    justify-content: space-between; padding: 20px; 
+
+} 
+
+.input-element{
+    
+        border-radius: 5px;
+        display: flex;   flex-direction: row;
+        height: 33px; width: 250px ;
+
+}
+
+.description-text input {
+    
+    display: flex; width: 350px;
+    height: 150px; font-size: large;  
+    
+}
+.submit{
+    position: relative;
+    height: 55px; width: 100px;
+    
+    
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    
+  }
+
+span{
+    color: red;
+}
+
+i {
+    
+    color: rgb(106, 236, 162);
+}
+
+
+

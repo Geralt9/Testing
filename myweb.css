@@ -1,0 +1,309 @@
+/*
+
+.question{
+
+    top: 25%;
+    transform: translateY(-25%);
+
+    left: 50%; transform: translateX(-50%);
+    position: absolute;
+    border: solid; border-width: 2.5px; padding: 20px;
+    font-size: 50px;   box-shadow: 10px 5px 10px black ;
+    background-color: beige;
+
+  
+}
+
+#age{
+
+    position: absolute;
+    font-size: 20px;
+    height: 55px;
+    box-shadow: 0.5px 1px 2px; 
+    
+}
+
+#submit{
+    font-size: large;
+    width: 200px;
+    height: 50px;
+    border: none;
+   
+    outline: none;
+    cursor: pointer; 
+
+}
+
+.question > button:hover {
+    background-color: aquamarine;
+} 
+
+--------------------------------------------------------------*/
+
+*, * ::before, * ::after{
+    margin: 0; padding: 0; 
+    box-sizing: border-box; font-family:  'Poppins' , sans-serif ;
+    
+}
+
+
+
+
+body{
+    
+    background-image: url(background.jpg); 
+    background-repeat: no-repeat; background-attachment: fixed;
+    background-color: black;
+    background-size: 100% 100vh;
+}
+/*
+.horizantalline{
+    position: relative;
+    
+    transform: translateY(-70%); top: 70%;
+}
+
+.HeadlineContainer{
+    
+    flex-wrap: wrap; 
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(101, 176, 247); box-shadow: 0px 5px 9px 0px rgba( 0, 0, 0, .5);
+
+    justify-content: space-between;
+    justify-content: space-around;
+        transform: translateX(-50%); left: 50%;
+       
+       padding-top: 2.5%;
+    border-width: 2px;
+    border-radius: 10px;
+
+}
+
+.textcontainer{
+    position: relative;
+    margin-right: 65px;
+    
+}
+.buttons:hover{
+    color: red;
+}
+.buttons{
+   
+    border: none;
+    background-color: transparent; 
+    cursor: pointer;
+}
+*/
+  /*  .Tab{
+  
+    border-radius: 10px;
+    width: 120px; height: 80px;
+    font-size: large;
+   
+    padding: 25px;
+    border: none;
+  
+    /*animating
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease; */ 
+
+   /* transition : transform 0.2s, background-color 0.4s  ; /*you can define each method seperately
+          to have an animation or use the all keyword to apply the animation on everything*/
+
+  /*        transition: all 0.3s; 
+                                                        
+    }
+
+    .buttons.active {
+        color: rgba(255, 0, 0, 0.623);
+        border-bottom: solid;
+
+
+    } 
+
+.Tab:Hover{
+
+   
+    box-shadow: 0px 5px 9px 0px rgba( 0, 0, 0, .5);
+    
+    cursor: pointer;
+    
+    transform: translateY(-10px); 
+    border-bottom: solid;
+}
+
+.textelemetn{
+    display: none;
+}
+.textelemetn.active{
+    display: block;
+    color: brown;
+}
+
+*/ 
+@keyframes slidetop {
+    from{
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.maincontainer{
+    
+    background-color: black;
+
+    display: grid; display: inline-grid; grid-template-columns:  1fr 1fr 1fr  ; grid-template-rows: 1fr 1fr 1fr 1fr ;
+    transform: translateY(-50%) ; top: 50% ; margin-top: 10vh;                       
+    position: relative;     
+    transform: translateX(-50%); left:50% ;
+     height: 125vh ;  width: 125vh ;
+     justify-content: space-between;  grid-gap : 10px ; 
+    border: solid; border-color: white; border-width: 1.5px; box-shadow: 10px 5px 25px 2.5px rgb(242, 250, 208) ;
+    
+    border-radius: 10px;
+}
+
+.title{
+    border-top: none; padding: 10px; border-radius: 15px;
+    border: solid; padding-left: 25px; border-width: 1.5px;
+    color: white; font-size: 4vh; ; position: relative; margin-bottom: 25px;
+    grid-gap: 50px; grid-row-start:1 ; grid-row-end: 1 ;
+                    grid-column-start: 3 ; grid-column-end: 3;
+    
+    transition: transform 0.3s ease 0s;
+    transition: background-color 0.3s ease 0s ;
+
+}
+.title:hover{
+    transform: translateY(5px); color: rgb(0, 0, 0) ;
+    background-color: aquamarine; cursor: pointer;
+}
+
+.button{
+   cursor: pointer;  height: 45vh ; width: 200px ; background: none; border: none;  
+   font-size: large; font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;
+   
+}
+.dexterity > button:hover{
+    color: rgb(72, 206, 90);
+}
+.strength > button:hover{
+    color: rgb(224, 161, 24);
+}
+.mage > button:hover{
+    color: rgb(27, 145, 255);
+}
+
+.dexterity{
+
+    transition: transform 0.4s ease 0s ; 
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;  
+    padding: 50px;  
+    height:55vh  ; width: 30vh ;
+    border: solid; border-width: 1.5px; grid-row-start:2 ; grid-row-end: 2 ;
+                   grid-column-start: 2 ; grid-column-end: 2 ;
+    color: white; font-size: 5vh;
+    background-image: url(dexterity.jpg);
+    background-repeat: no-repeat;
+     /*background-size : contain  , if you want it so be the size of the div even after changes*/
+    background-position: 50%;
+    background-size: cover; 
+}
+
+  .dexterity:hover{
+    transform: translateY(-15px); 
+    box-shadow: 0px -10px 25px 2px rgb(55, 218, 23) ; cursor: pointer;
+  }
+
+
+.strength{
+    transition: transform 0.4s ease 0s ; 
+    margin-right: 20vh;  position: relative; margin: top;
+    padding: 50px;
+    grid-row-start:2 ; grid-row-end: 2 ;
+    grid-column-start: 4 ; grid-column-end: 4 ;
+    border: solid;   border-width: 1.5px; border-radius: 15px;
+    color: white; font-size: 5vh; height:55vh  ; width: 30vh ;
+    background-image: url(Strength.jpg) ;
+    background-size: cover;
+
+}
+.strength:hover{
+    transform: translateY(-15px); 
+    box-shadow: 0px -10px 25px 2px rgb(224, 161, 24); ; cursor: pointer;
+}
+.mage{
+    padding: 50px;
+    transition: transform 0.4s ease 0s ; 
+    grid-row-start:3 ; grid-row-end: 3 ;
+    grid-column-start:3 ; grid-column-end: 3 ;
+    border: solid; border-width: 1.5px; border-radius: 15px;
+    color: white; font-size: 5vh; height:55vh  ; width: 30vh ;
+    background-image: url(mage.jpg);
+    background-size: cover;
+
+}
+.mage:hover{
+
+    
+    transform: translateY(-15px); 
+    box-shadow: 0px -10px 25px 2px rgb(17, 160, 255); ; cursor: pointer;
+}
+
+
+.text{
+    color: white; 
+    display: none ;
+    transition: transform 0.2s ease-in 0s;
+
+}
+.text.active{
+    
+    display: block;
+    transform: translateY(-5px);
+    background-blend-mode: color-dodge;
+
+}
+.button.active{
+    
+    font-size: large; 
+    transition: transform 0.2s ease-in 0s;
+}
+
+
+
+
+.header {
+    
+    position: static; width: 100%; height: 12vh;
+   
+     border-color: rgb(20, 128, 252); z-index: 100;
+    border-width: 1.5px; color: white; background-color:rgb(47, 167, 247) ;
+    display: flex; justify-content: flex-end; align-items: center; gap: 10px ;
+    
+}
+.title1{
+    
+    position: absolute;  left: 25px; font-weight: 100; text-decoration: none ;
+    color: antiquewhite; border: none; font-size: 30px; font-style: sans-serif ;
+}
+.navbar{
+    display: flex;
+    gap: 45px ; margin-right: 45px; 
+}
+.navbar a {
+     padding: 15px;  font-weight: 500; font-size: larger;
+    transition: transform 0.2s ; color: white; border-radius: 5px;
+}
+.tab:hover{
+    transform: translateY(-5px);
+    color: blue; background-color: rgb(113, 224, 252); 
+}

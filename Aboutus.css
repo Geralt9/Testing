@@ -1,0 +1,170 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box; font-family:  'Poppins' , sans-serif ;
+
+}
+
+body{
+    background-color: rgb(22, 22, 22);  height: 100vh;
+}
+
+.header {
+    
+    position: static; width: 100%; height: 12vh;
+   
+     border-color: rgb(20, 128, 252); z-index: 100;
+    border-width: 1.5px; color: white; background-color:rgb(47, 167, 247) ;
+    display: flex; justify-content: flex-end; align-items: center; gap: 10px ;
+    
+}
+.title1{
+    
+    position: absolute;  left: 25px; font-weight: 100; text-decoration: none ;
+    color: antiquewhite; border: none; font-size: 30px; font-style: sans-serif ;
+}
+.navbar{
+    display: flex;
+    gap: 45px ; margin-right: 45px; 
+}
+.navbar a {
+     padding: 15px;  font-weight: 500; font-size: larger;
+    transition: transform 0.2s ; color: white; border-radius: 5px;
+}
+.tab:hover{
+    transform: translateY(-5px);
+    color: blue; background-color: rgb(113, 224, 252); 
+}
+
+
+.container{
+    display: flex; row-gap: 50vh ;flex-direction: row; justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+
+.introduction{
+    position: relative; transform: translateY(50%); top: 15vh;
+    transform: translateX(10%); width: 150vh; height: 60vh;
+    color: rgb(245, 213, 73); border: solid;
+    display: flex; flex-direction: column; justify-content: space-between; 
+    padding: 50px; border-top-right-radius: 20px;  border-width: 1.5px;
+    background: linear-gradient(to right ,rgb(0, 0, 0) , rgb(42, 191, 250)  );
+    
+    
+}
+.introduction h2.sub-text{
+    color: rgb(68, 200, 240);
+    
+}
+
+.introduction p{ 
+    color: aquamarine; font-weight:100; font-size: large;
+}
+
+.buttoncontainer:hover i{
+    color: rgb(0, 0, 0);  font-size: 50px; position: relative; 
+    transform: translateY(-10px); 
+}
+.buttoncontainer i{
+    color: rgb(103, 252, 66);  font-size: 50px; position: relative; 
+    transform: translateY(-10px);
+    transition: .5s; 
+}
+
+
+
+.buttoncontainer{
+   position: relative;  transform: translateX(100vh); 
+   height: 50px; width: 250px ; padding: 15px; display: flex; flex-direction: row ;
+   padding-bottom: 50px; gap: 10px  ; 
+    border: solid; background-color: black; border-width: 0.1px; border-radius: 3.5px;
+    z-index: 1;
+
+    
+  /* transition: background-color 0.3s ease 0s;*/
+}
+
+.buttoncontainer::before{
+    background-color: rgb(17, 245, 176); width:0% ; height: 100%; content: '';
+    top: 0; left: 0; position: absolute; z-index: -1;
+    transition: .5s;
+}
+.buttoncontainer:hover::before{
+    width: 100%;
+}
+
+
+
+.button{
+    font-size: large ; 
+    width: 150vh; height: 55px; position: relative; transform: translateY(-10px); 
+    background: none; border: none; color: rgb(234, 255, 49) ; 
+    transition: .5s ; border-width: 0.5px;
+       
+}
+
+.button:hover{
+    font-size: 25px; 
+    cursor: pointer; color: rgb(247, 247, 247);
+}
+
+/*------------------------foor elements ----------------------------------------------------*/
+
+.footcontainer{
+    position: relative;  width: 100%; height: 50vh;
+    color: white;  bottom: 0; border-width: 1.5px;
+
+    display: flex;  flex-direction: column;  background-image: url(space.jpg); 
+
+}
+
+.title{
+    z-index: 1;  
+      border-width: 1px; position: absolute; border-bottom-left-radius:5px; border-bottom-right-radius: 5px;
+    transform: translateX(-50%); left: 50%;  border: solid;   border-color: rgb(18, 208, 255); border-width: 1.5px;
+    height: 50px; width: 300px ;  background-color: rgb(20, 102, 209); height: 100px; width: 50vh; display: flex; align-items: center;
+    justify-content: center; font-size:30px; font-weight:100 ;
+    
+}
+
+.post-container{
+    margin-top: 20px;
+    display: flex; justify-content: center; border-width: 1px;
+    gap: 20px ; position: relative; 
+
+}
+
+.row1{
+    padding-top: 100px; padding-left: 100px;
+    width: 100vh; height: 50vh;
+   
+    border-top: solid; border-left: solid;  border-width: 0.5px;
+    border-color: rgb(212, 211, 157);
+
+} 
+.list-title{  list-style-type: none ; font-weight: 200; font-size: 35px ; font-style:initial;  }
+
+.list{
+    list-style-type: none; font-weight: 150; font-size: 15px; 
+    padding-left: 100px ;
+    
+}
+
+.list a { color: aliceblue;
+        text-decoration: none;
+
+}
+a:hover{
+    color: aqua;
+}
+
+.row2{
+
+
+    padding-top: 100px; padding-left: 100px;
+    width: 100vh; height: 50vh;
+    border-top: solid; border-right: solid; border-width: 0.5px; border-color: rgb(212, 211, 157);
+
+
+
+}
